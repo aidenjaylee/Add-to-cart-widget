@@ -1,0 +1,24 @@
+{
+  "name": "brittian-responsive",
+  "version": "1.0.0",
+  "description": "To setup run: 'npm install', To compile CSS run 'gulp', to auto-compile run 'gulp watch'",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "brittian-responsive"
+  },
+  "author": "Stuart McPherson",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.3",
+    "gulp-sass": "^2.2.0",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.4"
+  }
+}

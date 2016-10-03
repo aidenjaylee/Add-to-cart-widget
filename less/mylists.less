@@ -1,0 +1,52 @@
+.my-list-grid {
+	width: 100%;
+	.Table{
+	    display: table;
+	}
+	.Title{
+	    display: table-caption;
+	    text-align: center;
+	    font-weight: bold;
+	    font-size: larger;
+	}
+	.Heading{
+	    display: table-row;
+	    font-weight: bold;
+	    text-align: center;
+	    background: #eee;
+	    .Cell {
+	    	width: 10%;
+	    	&:first-child {
+	    		width: 20%;
+    		    text-align: left;
+	    	}
+	    	&:last-child {
+	    		width: 40%;
+	    		text-align: right;
+	    	}
+	    }
+	}
+	.Row{
+	    display: table-row;
+	}
+	.Cell{
+	    display: table-cell;
+
+	    text-align: center;
+	}
+	a.product-image,.product-description,.product-list-item {
+	    display: table-cell;
+		border-color: grey;
+        vertical-align: middle;
+		width: 25%;
+	}
+	.product-description {
+		.product-title {
+			    font-size: 30px;
+		}
+		.product-price {
+		}
+	}
+	.product-list-item {
+	}
+}

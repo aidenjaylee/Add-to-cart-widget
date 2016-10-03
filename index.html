@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>List View Add to Cart - Jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Flipmind">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+    <script src="js/jquery.addtocart.plugin.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Add to Cart</a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="cart">
+                        <span class="badge-num">3</span>
+                        <a href="">Cart</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="maincontents">
+
+        <div id="product" class="product-view-grid">
+            <ul>
+                <li>
+                    <a class="product-image" href="#"><img src="img/product/1.png"></a>
+                    <h3 class="product-title">Silver beet</h3>
+                    <div class="product-price">$19.90</div>
+                    <div class="product-details">
+                        Silver beet shallot wakame tomatillo salsify 
+                    </div>
+                        <div class="product-list-item" data-productcode="IL200S201XXXXX" data-basketquantity="0" data-quantity-min="0.5" data-quantity-max="100" data-quantity-increment="1.0" data-unit="ea">
+                            <div class="item-not-in-basket">
+                                <label>qty<input type="text" id="quantity" value="0.0"/></label>
+                                <span>Ea</span>
+                                <button id="addProduct" class="add-product">ADD TO TROLLEY</button>
+                            </div>
+                            <div class="basket-quantity-adjust">
+                                <span class="delete-button" id="deleteButton"></span>
+                                <span class="quantity after-icon">0<small>Ea</small></span>
+                                <span class="qty-down"></span>
+                                <span class="qty-up"></span>
+                            </div>
+                        </div>
+                </li>
+                <li>
+                    <a class="product-image" href="#"><img src="img/product/2.png"></a>
+                    <h3 class="product-title">Wattle seed</h3>
+                    <div class="product-price">$22.90</div>
+                    <div class="product-details">
+                        Wattle seed bunya nuts spring onion okra 
+                    </div>
+                    <!-- <a class="product-icon product-add" href="#">Add to cart</a> -->
+                    <div class="product-list-item" data-productcode="2222222" data-basketquantity="100" data-quantity-min="100" data-quantity-max="9000" data-quantity-increment="50" data-unit="g">
+                        <div class="item-not-in-basket">
+                            <label>qty <input type="text" id="quantity" value="1"/></label>
+                            <span>g</span>
+                            <button id="addProduct" class="add-product">ADD TO TROLLEY</button>
+                        </div>
+                        <div class="basket-quantity-adjust">
+                            <span class="delete-button" id="deleteButton"></span>
+                            <span class="quantity after-icon">100<small>g</small></span>
+                            <span class="qty-down"></span>
+                            <span class="qty-up"></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="product-image" href="#"><img src="img/product/3.png"></a>
+                    <h3 class="product-title">Kohlrabi bok</h3>
+                    <div class="product-price">$5.90</div>
+                    <div class="product-details">
+                        Kohlrabi bok choy broccoli rabe welsh onion 
+                    </div>
+                    <!-- <a class="product-icon product-add" href="#">Add to cart</a> -->
+                    <div class="product-list-item" data-productcode="4444444" data-basketquantity="2.0" data-quantity-min="1.0" data-quantity-max="30" data-quantity-increment="1.0" data-unit="ea">
+                        <div class="item-not-in-basket">
+                            <label>qty <input type="text" id="quantity" value="1"/></label>
+                            <span>ea</span>
+                            <button id="addProduct" class="add-product">ADD TO TROLLEY</button>
+                        </div>
+                        <div class="basket-quantity-adjust">
+                            <span class="delete-button" id="deleteButton"></span>
+                            <span class="quantity after-icon">2<small>ea</small></span>
+                            <span class="qty-down"></span>
+                            <span class="qty-up"></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="product-image" href="#"><img src="img/product/4.png"></a>
+                    <h3 class="product-title">Melon sierra</h3>
+                    <div class="product-price">$12.90</div>
+                    <div class="product-details">
+                        Melon sierra leone bologi carrot peanut 
+                    </div>
+                    <!-- <a class="product-icon product-add" href="#">Add to cart</a> -->
+                    <div class="product-list-item" data-productcode="3333333" data-basketquantity="3" data-quantity-min="0.5" data-quantity-max="5" data-quantity-increment="0.5" data-unit="kg">
+                        <div class="item-not-in-basket">
+                            <label>qty <input type="text" id="quantity" value="1"/></label>
+                            <span>kg</span>
+                            <button id="addProduct" class="add-product">ADD TO TROLLEY</button>
+                        </div>
+                        <div class="basket-quantity-adjust">
+                            <span class="delete-button" id="deleteButton"></span>
+                            <span class="quantity after-icon">3<small>kg</small></span>
+                            <span class="qty-down"></span>
+                            <span class="qty-up"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $(".product-list-item").listViewAddToCart ({
+
+        addAll: function(items, selector, callback) {
+            
+            // alert('callback');
+            // tell the caller that the add was successful
+            for(i=0; i < items.length; i++) {
+                var item = items[i];
+                // alert(selector);
+                if (selector == '.add-checked-to-cart'){ 
+                    alert('Have added ' + item.qty + ' of ' + item.productCode + 'to the Cart'); 
+                }else { 
+                    alert('Have added ' + item.qty + ' of ' + item.productCode + 'to the Saved list'); 
+                }
+            }
+            callback(false);
+
+        },
+        // Called when the user clicks to add the product to their cart
+        add: function(product, qty, callback){ 
+
+            // tell the caller that the add was successful 
+            alert('Have added ' + qty + ' of ' + product + 'to the cart');
+
+            var cartQty = $('.cart .badge-num').text();
+            var updateCartQty = parseFloat(cartQty) + 1;
+            $('.cart .badge-num').text(updateCartQty);
+
+            var $product = product.element,
+                $productCode = product.productCode,
+                $unit = product.unit;
+
+            console.log( product );
+
+            $product.attr('data-basketquantity', qty);
+            callback(false);
+        },
+        // Call when the user taps the up down arrow 
+        change: function(product, qty, callback){ 
+            
+            // tell the caller that the add was successful 
+            alert('Have change quantity to ' + qty + ' of ' + product + ' in the cart');
+
+            var $product = product.element,
+                $productCode = product.productCode,
+                $unit = product.unit;
+
+            console.log( product );
+
+            $product.attr('data-basketquantity', qty);
+            callback(false);
+
+        },
+        delete: function(product, callback){ 
+            
+            // tell the caller that the add was successful 
+            alert('Have removed ' + product + ' from the cart'); 
+
+            var cartQty = $('.cart .badge-num').text();
+            var updateCartQty = parseFloat(cartQty) - 1;
+            $('.cart .badge-num').text(updateCartQty);
+
+            var $product = product.element,
+                $productCode = product.productCode,
+                $unit = product.unit;
+
+            console.log( product );
+
+            $product.attr('data-basketquantity', qty);
+            callback(false);
+        },
+        attributes:{ 
+            productCode: 'data-productcode',
+            quantity: 'data-basketquantity',
+            quantityMin: 'data-quantity-min',
+            quantityMax: 'data-quantity-max',
+            quantityIncrement: 'data-quantity-increment',
+            unit: 'data-unit'
+        },
+        selectors:{ 
+                // The button ADD CHECKED TO CART would have this selector, searched globally in document 
+                addAllProducts: [ '.add-checked-to-cart', '.save-checked-as-new-list' ],
+                selected: 'input:checked',
+                // The tick box next to each product would have this selector. Search within the context of the produt (e.g. .product-list-item) selected: '.chk', 
+                addProduct: '.add-product',
+                deleteProduct: '.delete-button',
+                quantitySpan: '.quantity',
+                quantityInput: '#quantity',
+                quantityDown: '.qty-down',
+                quantityUp: '.qty-up',
+                itemInBasketContainer: '.basket-quantity-adjust',
+                itemNotInBasketContainer: '.item-not-in-basket',
+                loading: '#loading'
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+
+header {
+  width: 100%;
+  background-color: #eee;
+  .container {
+      padding: 10px 0;
+    .logo{
+      float: left;
+      a{
+        text-decoration: none;
+      } 
+    }
+    ul {
+      float: right;
+      margin: 0;  
+      li {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.product-view-grid ul li {
+  width: 22%;
+  text-align: center;
+  padding: 15px 0;
+  margin: 10px 5px;
+  display: inline-block;
+  position: relative;
+  min-height: 350px;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  .product-title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .product-details {
+      max-width: 200px;
+      margin: 0 auto;
+      line-height: 1.2;
+      font-size: 14px;
+  } 
+  .product-price {
+    font-size: 1.5em;
+  }
+  .product-list-item {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+  }
+
+}
+
+// add-to-cart items
+.product-list-item {
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+  .item-not-in-basket {
+    padding: 10px 0;
+    height: 30px;
+    input[type="text"] {
+      width: 25px;
+      padding: 0;
+      height: 21px;
+      text-align: center;
+    }
+    .add-product {
+      color: #fff;
+      background: #47a3da;
+      padding: 10px 20px;
+      border-radius: 2px;
+      display: inline-block;
+
+      margin: 0;
+      font-size: 12px;
+      font-family: @font-family;
+      padding: 5px;
+      border: none;
+
+      transition: background 0.2s;
+    }
+
+    .add-product:hover {
+      color: #fff;
+      background: #02639d;
+    }
+    span {
+      font-size: 12px;
+      padding: 0 5px;
+    }
+    label {
+      display: inline-block;
+        font-size: 12px;
+    }
+  }
+  .basket-quantity-adjust {
+    padding: 10px 10px;
+    height: 30px;
+    background-color: #e8e8e8;
+    span {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .delete-button {
+      float: left;
+      &:before {
+        content: "\f00d";
+      }
+    }
+    .quantity {
+      padding: 0 20px;
+      cursor:default;
+      &:after {
+        content: "\f07a";
+        padding-left: 5px;
+      }
+    }
+    .qty-down {
+      margin-left: 10px;
+      &:after{
+          content: "\f068";
+      }
+    }
+    .qty-up {
+      margin-left: 10px;
+      &:after{
+          content: "\f067";
+      }
+    }
+
+  }
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>List View Add to Cart - Jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Flipmind">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+    <script src="js/jquery.addtocart.plugin.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Add to Cart</a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="cart">
+                        <span class="badge-num">2</span>
+                        <a href="">Cart</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="maincontents">
+        <div class="product-view-grid">
+            <div id="product" class="my-list-grid Table">
+                <div class="Heading top-head">
+                    <div class="Cell">
+                        <button class="save-checked-as-new-list">Save Checked As New List</button>
+                    </div>
+                    <div class="Cell">
+                    </div>
+                    <div class="Cell">
+                    </div>
+                    <div class="Cell">
+                        <button class="add-checked-to-cart">add checked to cart</button>
+                        <label>check all<input id="check-all" type="checkbox"></label>
+                    </div>
+                </div>
+                <div class="Tbody">
+                    <div class="Row">
+                        <a class="product-image" href="#"><img src="img/product/4.png"></a>
+                        <div class="product-description">
+                            <h3 class="product-title">Melon sierra</h3>
+                            <div class="product-price">$12.90</div>
+                        </div>
+                        <div class="product-list-item" data-productcode="3333333" data-basketquantity="0" data-quantity-min="0.5" data-quantity-max="5" data-quantity-increment="0.5" data-unit="kg">
+                            <div class="item-not-in-basket">
+                                <label>qty <input type="text" id="quantity" value="0"/></label>
+                                <span>kg</span>
+                                <button id="addProduct" class="add-product">ADD TO TROLLEY</button>
+                            </div>
+                            <div class="basket-quantity-adjust">
+                                <span class="delete-button" id="deleteButton"></span>
+                                <span class="quantity after-icon">0<small>kg</small></span>
+                                <span class="qty-down"></span>
+                                <span class="qty-up"></span>
+                            </div>
+                        </div>
+                        <div class="Cell"><input type="checkbox" value="nz carrots"></div>
+                    </div>
+                    <div class="Row">
+                        <a class="product-image" href="#"><img src="img/product/4.png"></a>
+                        <div class="product-description">
+                            <h3 class="product-title">Melon sierra</h3>
+                            <div class="product-price">$12.90</div>
+                        </div>
+                        <div class="product-list-item" data-productcode="3333333" data-basketquantity="2" data-quantity-min="0.5" data-quantity-max="5" data-quantity-increment="0.5" data-unit="kg">
+                            <div class="item-not-in-basket">
+                                <label>qty <input type="text" id="quantity" value="2"/></label>
+                                <span>kg</span>
+                                <button id="addProduct" class="add-product">ADD TO TROLLEY</button>
+                            </div>
+                            <div class="basket-quantity-adjust">
+                                <span class="delete-button" id="deleteButton"></span>
+                                <span class="quantity after-icon">2<small>kg</small></span>
+                                <span class="qty-down"></span>
+                                <span class="qty-up"></span>
+                            </div>
+                        </div>
+                        <div class="Cell"><input type="checkbox" value="nz carrots"></div>
+                    </div>
+                    <div class="Row">
+                        <a class="product-image" href="#"><img src="img/product/4.png"></a>
+                        <div class="product-description">
+                            <h3 class="product-title">Melon sierra</h3>
+                            <div class="product-price">$12.90</div>
+                        </div>
+                        
+                        <div class="product-list-item" data-productcode="3333333" data-basketquantity="3" data-quantity-min="0.5" data-quantity-max="5" data-quantity-increment="0.5" data-unit="kg">
+                            <div class="item-not-in-basket">
+                                <label>qty <input type="text" id="quantity" value="3"/></label>
+                                <span>kg</span>
+                                <button id="addProduct" class="add-product">ADD TO TROLLEY</button>
+                            </div>
+                            <div class="basket-quantity-adjust">
+                                <span class="delete-button" id="deleteButton"></span>
+                                <span class="quantity after-icon">3<small>kg</small></span>
+                                <span class="qty-down"></span>
+                                <span class="qty-up"></span>
+                            </div>
+                        </div>
+                        <div class="Cell"><input type="checkbox" value="nz carrots"></div>
+                    </div>
+                </div>
+                <div class="Heading bottom-head">
+                    <div class="Cell">
+                        <button class="save-checked-as-new-list">Save Checked As New List</button>
+                    </div>
+                    <div class="Cell">
+                    </div>
+                    <div class="Cell">
+                    </div>
+                    <div class="Cell">
+                        <button class="add-checked-to-cart">add checked to cart</button>
+                        <label>check all<input id="check-all" type="checkbox" date-showIndeterminate="false"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-check-all.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // $('#check-all').each(function(index){
+            //     $( this ).checkAll();
+            // });
+            var options = {showIndeterminate: true };
+            $('.top-head #check-all').checkAll(options);
+            $('.bottom-head #check-all').checkAll(options);
+        });
+    </script>
+    <script>
+    jQuery(document).ready(function(){
+        $(".product-list-item").listViewAddToCart ({
+            // Called when the user clicks on addAllProducts. It passes a list of all the items that are ticked.
+            addAll: function(items, selector, callback) {
+                callback(false);
+                // alert('callback');
+                // tell the caller that the add was successful
+                for(i=0; i < items.length; i++) {
+                    var item = items[i];
+                    // alert(selector);
+                    if (selector == '.add-checked-to-cart'){ 
+                        alert('Have added ' + item.qty + ' of ' + item.productCode + 'to the Cart'); 
+                    }else { 
+                        alert('Have added ' + item.qty + ' of ' + item.productCode + 'to the Saved list'); 
+                    }
+                }
+
+            },
+            add: function(productCode, qty, callback){ 
+                callback(true); 
+                // tell the caller that the add was successful 
+                alert('Have added ' + qty + ' of ' + productCode + 'to the cart'); 
+
+                var cartQty = $('.cart .badge-num').text();
+                var updateCartQty = parseFloat(cartQty) + 1;
+                $('.cart .badge-num').text(updateCartQty);
+
+                var itemOfProductCode = $(".product-list-item[data-productcode='"+productCode+"']");
+                itemOfProductCode.attr('data-basketquantity', qty);
+                
+            },
+            // Call when the user taps the up down arrow 
+            change: function(productCode, qty, callback){ 
+                callback(false);
+                // tell the caller that the add was successful 
+                alert('Have change quantity to ' + qty + ' of ' + productCode + ' in the cart');
+                
+                var itemOfProductCode = $(".product-list-item[data-productcode='"+productCode+"']");
+                itemOfProductCode.attr('data-basketquantity', qty);
+
+            },
+            delete: function(productCode, callback){ 
+                callback(true);
+                // tell the caller that the add was successful 
+                alert('Have removed ' + productCode + ' from the cart'); 
+
+                var cartQty = $('.cart .badge-num').text();
+                var updateCartQty = parseFloat(cartQty) - 1;
+                $('.cart .badge-num').text(updateCartQty);
+
+                var itemOfProductCode = $(".product-list-item[data-productcode='"+productCode+"']");
+                itemOfProductCode.attr('data-basketquantity', 0);
+
+            },
+            attributes:{ 
+                productCode: 'data-productcode',
+                quantity: 'data-basketquantity',
+                quantityMin: 'data-quantity-min',
+                quantityMax: 'data-quantity-max',
+                quantityIncrement: 'data-quantity-increment',
+                unit: 'data-unit'
+            },
+            selectors:{ 
+                // The button ADD CHECKED TO CART would have this selector, searched globally in document 
+                addAllProducts: [ '.add-checked-to-cart', '.save-checked-as-new-list' ],
+                selected: 'input:checked',
+                // The tick box next to each product would have this selector. Search within the context of the produt (e.g. .product-list-item) selected: '.chk', 
+                addProduct: '.add-product',
+                deleteProduct: '.delete-button',
+                quantitySpan: '.quantity',
+                quantityInput: '#quantity',
+                quantityDown: '.qty-down',
+                quantityUp: '.qty-up',
+                itemInBasketContainer: '.basket-quantity-adjust',
+                itemNotInBasketContainer: '.item-not-in-basket',
+                loading: '#loading'
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>
