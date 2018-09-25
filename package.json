@@ -1,5 +1,5 @@
 {
-  "name": "brittian-responsive",
+  "name": "add-to-card-widget",
   "version": "1.0.0",
   "description": "To setup run: 'npm install', To compile CSS run 'gulp', to auto-compile run 'gulp watch'",
   "main": "gulpfile.js",
@@ -8,9 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "brittian-responsive"
   },
-  "author": "Stuart McPherson",
+  "author": "aiden",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.7.1",
